@@ -18,10 +18,10 @@ namespace ConsoleAppPL
             string pass = GetPassword();
             Console.WriteLine();
             Console.WriteLine("===============================");
-            //valid username password here
-            Cashier cashier = new Cashier(){UserName = userName, Password = pass};
-            CashierBL bl = new CashierBL();
-            int login = bl.Login(cashier);
+            valid username password here
+            Saleman saleman = new Saleman(){UserName = userName, Password = pass};
+            SalemanBL bl = new SalemanBL();
+            int login = bl.Login(saleman);
             if(login <= 0)
             {
                 Console.WriteLine("Can't Login");
