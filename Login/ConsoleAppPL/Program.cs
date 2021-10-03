@@ -18,18 +18,18 @@ namespace ConsoleAppPL
             string pass = GetPassword();
             Console.WriteLine();
             Console.WriteLine("===============================");
-            valid username password here
-            Saleman saleman = new Saleman(){UserName = userName, Password = pass};
-            SalemanBL bl = new SalemanBL();
-            int login = bl.Login(saleman);
-            if(login <= 0)
-            {
-                Console.WriteLine("Can't Login");
-            }else{
-                Console.WriteLine("Welcome to system...");
-                MainMenu();
-            }
-        }
+        //     valid username password here
+        //     Saleman saleman = new Saleman(){UserName = userName, Password = pass};
+        //     SalemanBL bl = new SalemanBL();
+        //     int login = bl.Login(saleman);
+        //     if(login <= 0)
+        //     {
+        //         Console.WriteLine("Can't Login");
+        //     }else{
+        //         Console.WriteLine("Welcome to system...");
+        //         MainMenu();
+        //     }
+        // }
 
        
 
@@ -55,3 +55,4 @@ namespace ConsoleAppPL
             }while (key != ConsoleKey.Enter);
             return pass;
         }
+}
